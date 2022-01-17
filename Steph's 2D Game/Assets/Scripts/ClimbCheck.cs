@@ -4,7 +4,7 @@ using UniRx;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerController))]
-public class ClimbState : MonoBehaviour, IState
+public class ClimbCheck : MonoBehaviour, IState
 {
     private PlayerState _state;
     private Rigidbody2D _rb;
@@ -18,7 +18,7 @@ public class ClimbState : MonoBehaviour, IState
     public float climbSpeed => _state.Config.climbSpeed;
     private float _defaultGravityScale;
 
-    private bool HasClimbable() => _numClimbables > 0;
+    public bool HasClimbable() => _numClimbables > 0;
     private void Awake()
     {
         _state = GetComponent<PlayerState>();

@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         
         var airState = new AerialState(this);
         var gndState = new GroundedState(this);
-        var cliState = GetComponent<ClimbState>();
+        var cliState = GetComponent<ClimbCheck>();
         PlayerStateMachine = new StateMachine();
         PlayerStateMachine.AddState(airState);
         PlayerStateMachine.AddState(gndState);

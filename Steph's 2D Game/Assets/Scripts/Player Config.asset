@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2410eeb8615b10349a67287ba26ccee3, type: 3}
   m_Name: Player Config
   m_EditorClassIdentifier: 
-  jumpForce: 13
+  jumpForce: 15
   maxMoveSpeed: 250
   climbSpeed: 300
